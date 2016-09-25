@@ -1,0 +1,189 @@
+/* General styling */
+
+* {
+  box-sizing: border-box;
+  padding: 5px;
+}
+/* up. this to avoid adding height when using padding onto existing things' */
+
+body {
+  font-family: 'David Libre', serif;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Lato', sans-serif;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color: #1bbc9b;
+  padding: 20px 11px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+/* Navigation */
+
+nav {
+  background: black;
+  padding: 10px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 60px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Header styling */
+
+header {
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 600px;
+  padding-top: 180px;
+}
+
+header h2 {
+  margin-bottom: 40px;
+}
+
+/* Features section styling */
+.features {
+text-align: center;
+}
+
+.features article {
+width: 24%;
+display: inline-block;
+padding: 10px;
+}
+
+.features article .btn {
+    background-color: white;
+    border: 1px solid #1bbc9b;
+    color: #1bbc9b;
+}
+
+
+/* Mockup section styling */
+
+.mockup {
+  margin-top: 30px;
+  background: black url(../images/mockup-bg.jpg) center no-repeat;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+}
+
+.mockup h2 {
+  font-size: 35px;
+}
+
+.mockup p {
+  font-size: 20px;
+}
+
+.mockup img {
+  margin-bottom: 15px;
+}
+
+/* Clients section */
+
+.clients {
+  background-color: #1bbc9b;
+  text-align:center;
+  color: white;
+  padding: 10px;
+}
+
+.clients h2 {
+  font-size: 30px;
+}
+
+.clients ul li {
+  display: inline-block;
+}
+
+.clients ul li img {
+  max-width: 150px;
+}
+
+.clients .btn {
+  border: 1px solid white;
+  color: white;
+  margin-bottom: 15px;
+  transition: all .2s ease;
+}
+
+.clients .btn:hover {
+  background: white;
+  color: #1bbc9b;
+}
+
+/* Footer styling */
+
+footer {
+  background-color: black;
+  text-align: center;
+  padding: 15px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+footer ul li img {
+  max-width: 60px;
+  transition: all .2s ease;
+}
+
+footer ul li img:hover {
+  opacity: .4;
+}
+
+/* Media queries/responsiveness for ipad */
+@media (max-width: 768px) {
+  nav {
+    text-align:center;
+    padding: 20px 0;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+.features article {
+  width: 100%;
+  display: block;
+}
+
+.mockup img {
+  max-width:100%;
+}
+
+}
